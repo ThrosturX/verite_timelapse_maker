@@ -73,13 +73,13 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Create a timelapse of Verite\'s classic EVE Influence maps')
     parser.add_argument('start', metavar='START_DATE', help='A date in the format Ymd (20070809)')
     parser.add_argument('end', metavar='END_DATE', nargs='?', default=today, help='A date in the format Ymd (20170809);\ndefaults to the current date')
-    parser.add_argument('--originals-dir', metavar='PATH', default='originals', help='Where to save downloaded images')
-    parser.add_argument('--modified-dir', metavar='PATH', default='images', help='Where to save edited images')
-    parser.add_argument('--output_path', metavar='FILENAME', default='video.avi', help='The filename of the final video (and by extension the file format chosen for ffmpeg)')
+    parser.add_argument('--originals_dir', metavar='PATH', default='originals', help='Where to save downloaded images')
+    parser.add_argument('--modified_dir', metavar='PATH', default='images', help='Where to save edited images')
+    parser.add_argument('--output_file', metavar='FILENAME', default='video.avi', help='The filename of the final video (and by extension the file format chosen for ffmpeg)')
     args = parser.parse_args()
     start = datetime.strptime(args.start, date_fmt)
     end = datetime.strptime(args.end, date_fmt)
     dl_dest = args.originals_dir
     save_dest = args.modified_dir
     mkdirs([dl_dest, save_dest])
-    main(start, end, dl_dest, save_dest, args.output_path)
+    main(start, end, dl_dest, save_dest, args.output_file)
