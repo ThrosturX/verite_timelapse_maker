@@ -65,8 +65,8 @@ if __name__ == '__main__':
     date_fmt = '%Y%m%d'
     today = date.today().strftime(date_fmt)
     parser = argparse.ArgumentParser(description='Create a timelapse of Verite\'s classic EVE Influence maps')
-    parser.add_argument('start', metavar='DATE', help='A date in the format %Y%m%d (20010131)')
-    parser.add_argument('end', metavar='DATE', nargs='?', default=today, help='A date in the format %Y%m%d (20010131)')
+    parser.add_argument('start', metavar='DATE', help='A date in the format Ymd (20070809)')
+    parser.add_argument('end', metavar='DATE', nargs='?', default=today, help='A date in the format Ymd (20170809); defaults to the current date')
     parser.add_argument('--originals-dir', metavar='DIR', default='originals', help='Where to save downloaded images')
     parser.add_argument('--modified-dir', metavar='DIR', default='images', help='Where to save edited images')
     args = parser.parse_args()

@@ -4,3 +4,19 @@ Requirements:
 
 * Python2
 * Pillow (PIL) for Python2
+
+```
+usage: influence_stitcher.py [-h] [--originals-dir DIR] [--modified-dir DIR]
+                             DATE [DATE]
+
+Create a timelapse of Verite's classic EVE Influence maps
+
+positional arguments:
+  DATE                 A date in the format Ymd (20070809)
+  DATE                 A date in the format Ymd (20170809)
+
+optional arguments:
+  -h, --help           show this help message and exit
+  --originals-dir DIR  Where to save downloaded images
+  --modified-dir DIR   Where to save edited images
+```
