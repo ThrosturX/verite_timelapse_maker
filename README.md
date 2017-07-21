@@ -21,8 +21,8 @@ Create a timelapse of Verite's classic EVE Influence maps
 
 positional arguments:
   START_DATE            A date in the format Ymd (20070809)
-  END_DATE              A date in the format Ymd (20170809); defaults to the
-                        current date
+  END_DATE              A date in the format Ymd (20170809)
+                        defaults to the current date
 
 optional arguments:
   -h, --help            show this help message and exit
