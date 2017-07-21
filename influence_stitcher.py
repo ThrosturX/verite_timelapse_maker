@@ -72,7 +72,7 @@ if __name__ == '__main__':
     today = date.today().strftime(date_fmt)
     parser = argparse.ArgumentParser(description='Create a timelapse of Verite\'s classic EVE Influence maps')
     parser.add_argument('start', metavar='START_DATE', help='A date in the format Ymd (20070809)')
-    parser.add_argument('end', metavar='END_DATE', nargs='?', default=today, help='A date in the format Ymd (20170809)\ndefaults to the current date')
+    parser.add_argument('end', metavar='END_DATE', nargs='?', default=today, help='A date in the format Ymd (20170809);\ndefaults to the current date')
     parser.add_argument('--originals-dir', metavar='PATH', default='originals', help='Where to save downloaded images')
     parser.add_argument('--modified-dir', metavar='PATH', default='images', help='Where to save edited images')
     parser.add_argument('--output_path', metavar='FILENAME', default='video.avi', help='The filename of the final video (and by extension the file format chosen for ffmpeg)')
