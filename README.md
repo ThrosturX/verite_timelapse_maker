@@ -5,6 +5,12 @@ Requirements:
 * Python2
 * Pillow (PIL) for Python2
 
+## Note
+
+Please consider supporting http://eve-files.com/ -- especially if you plan on using this yourself, as each downloaded year of images constitutes about 250 MB of data.
+
+## Usage
+
 ```
 usage: influence_stitcher.py [-h] [--originals-dir DIR] [--modified-dir DIR]
                              DATE [DATE]
