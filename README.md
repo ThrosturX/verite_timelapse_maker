@@ -4,6 +4,7 @@ Requirements:
 
 * Python2
 * Pillow (PIL) for Python2
+* `ffmpeg`
 
 ## Note
 
